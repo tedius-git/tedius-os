@@ -107,6 +107,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dock-from-dash
     nh
+    lazygit
     ripgrep
     whatsapp-for-linux
     lua-language-server
