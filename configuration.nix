@@ -107,6 +107,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dock-from-dash
     nh
+    ripgrep
     whatsapp-for-linux
     lua-language-server
     pyright
@@ -125,7 +126,7 @@
     chafa
     fastfetch
     zathura
-    inputs.zen-browser.packages."${pkgs.system}".generic
+    inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
