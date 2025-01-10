@@ -4,6 +4,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
@@ -124,6 +125,7 @@
     chafa
     fastfetch
     zathura
+    inputs.zen-browser.packages."${pkgs.system}".generic
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

@@ -4,6 +4,7 @@
   inputs = {
     nixpkg.url = "github:nixos/nixpkgs/nixos-24.11";
     nixpkgsold.url = "github:nixos/nixpkgs?ref=nixos-21.11";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs = {
