@@ -87,7 +87,7 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.sessionVariables = {
-    FLAKEREF = "/home/tedius/tedius-os";
+    FLAKEREF = "/home/tedius/tedius-os/";
   };
 
   # List packages installed in system profile. To search, run:

@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   # TODO please change the username & home directory to your own
@@ -9,7 +10,36 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    sl
+    wezterm
+    cascadia-code
+    zoxide
+    neovim
+    gh
+    gcc
+    starship
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.dock-from-dash
+    lazygit
+    ripgrep
+    whatsapp-for-linux
+    lua-language-server
+    pyright
+    tinymist
+    nil
+    stylua
+    black
+    typst
+    typstfmt
+    alejandra
+    eza
+    python3
+    julia
+    gleam
+    bat
+    chafa
+    fastfetch
+    zathura
+    inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
   # This value determines the home Manager release that your
