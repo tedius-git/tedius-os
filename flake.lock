@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "nixpkg": {
+    "nixpkgs": {
       "locked": {
         "lastModified": 1736200483,
         "narHash": "sha256-JO+lFN2HsCwSLMUWXHeOad6QUxOuwe9UOAF/iSl1J4I=",
@@ -14,18 +14,6 @@
         "ref": "nixos-24.11",
         "repo": "nixpkgs",
         "type": "github"
-      }
-    },
-    "nixpkgs": {
-      "locked": {
-        "lastModified": 0,
-        "narHash": "sha256-/qlNWm/IEVVH7GfgAIyP6EsVZI6zjAx1cV5zNyrs+rI=",
-        "path": "/nix/store/khbvilmsrv4l69nwd52h27j1mp44a0xi-source",
-        "type": "path"
-      },
-      "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
       }
     },
     "nixpkgs_2": {
@@ -62,7 +50,6 @@
     },
     "root": {
       "inputs": {
-        "nixpkg": "nixpkg",
         "nixpkgs": "nixpkgs",
         "nixpkgsold": "nixpkgsold",
         "zen-browser": "zen-browser"
