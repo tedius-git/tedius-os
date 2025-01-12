@@ -87,47 +87,17 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.sessionVariables = {
-    FLAKEREF = "/home/tedius/tedius-os/";
+    FLAKEREF = "/home/tedius/tedius-os";
   };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # Global Packages
     vim
     git
     wget
-    wezterm
-    cascadia-code
-    fzf
-    zoxide
-    neovim
-    gh
-    gcc
-    starship
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.dock-from-dash
     nh
-    lazygit
-    ripgrep
-    whatsapp-for-linux
-    lua-language-server
-    pyright
-    tinymist
-    nil
-    stylua
-    black
-    typst
-    typstfmt
-    alejandra
-    eza
-    python3
-    julia
-    gleam
-    bat
-    chafa
-    fastfetch
-    zathura
-    inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
