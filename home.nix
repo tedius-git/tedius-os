@@ -8,6 +8,13 @@
   home.username = "tedius";
   home.homeDirectory = "/home/tedius";
 
+  home.file = {
+  };
+
+  imports = [
+    ./gnome.nix
+  ];
+
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     fzf
@@ -18,8 +25,6 @@
     gh
     gcc
     starship
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.dock-from-dash
     lazygit
     ripgrep
     whatsapp-for-linux
