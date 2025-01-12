@@ -119,6 +119,7 @@
     git
     wget
     nh
+    xclip
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
