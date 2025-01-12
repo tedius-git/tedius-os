@@ -13,8 +13,29 @@
   ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot = {
+      enable = false;
+    };
+    grub = {
+      enable = true;
+      useOSProber = true;
+      copyKernels = true;
+      efiSupport = true;
+      fsIdentifier = "label";
+      devices = ["nodev"];
+      extraEntries = ''
+        menuentry "Reboot" {
+            reboot
+        }
+        menuentry "Poweroff" {
+            halt
+        }
+      '';
+      theme = inputs.nixos-grub-themes.packages.${pkgs.system}.nixos;
+    };
+    efi.canTouchEfiVariables = true;
+  };
 
   networking.hostName = "hp"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

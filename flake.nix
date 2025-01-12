@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     nixpkgsold.url = "github:nixos/nixpkgs?ref=nixos-21.11";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
+    nixos-grub-themes.url = "github:jeslie0/nixos-grub-themes";
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
