@@ -8,11 +8,10 @@
   home.username = "tedius";
   home.homeDirectory = "/home/tedius";
 
-  home.file = {
-  };
 
   imports = [
     ./gnome.nix
+    ./starship.nix
   ];
 
   # Packages that should be installed to the user profile.
@@ -24,7 +23,6 @@
     neovim
     gh
     gcc
-    starship
     lazygit
     ripgrep
     whatsapp-for-linux
