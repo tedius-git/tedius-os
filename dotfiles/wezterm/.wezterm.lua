@@ -29,15 +29,10 @@ wezterm.on("toggle-opacity", function(window, pane)
 end)
 
 -- General Config
-config.default_prog = {
-    "C:/Users/pablo/AppData/Local/Microsoft/WindowsApps/Microsoft.PowerShell_8wekyb3d8bbwe/pwsh.exe",
-    "-NoLogo",
-}
-config.default_cwd = "C:/Users/pablo"
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("Cascadia Code", { weight = "Bold" })
-config.font_size = 14.0
-config.window_background_opacity = OPACITY.transparent
+config.font_size = 16.0
+config.window_background_opacity = OPACITY.solid
 config.initial_cols = 120
 config.initial_rows = 30
 config.harfbuzz_features = { "calt=1", "clig=1", "liga=1" }
@@ -51,18 +46,19 @@ config.window_padding = {
 config.show_new_tab_button_in_tab_bar = false
 config.tab_bar_at_bottom = false
 config.hide_tab_bar_if_only_one_tab = false
-config.window_decorations = "RESIZE"
-config.window_close_confirmation = "NeverPrompt"
+-- config.window_decorations = "RESIZE"
 config.cursor_blink_rate = 500
 config.adjust_window_size_when_changing_font_size = false
 config.enable_scroll_bar = false
 config.scrollback_lines = 5000
+config.front_end = "WebGpu"
+config.enable_wayland = false
 
 -- Keybindings
-config.leader = { key = "b", mods = "CTRL" }
+config.leader = { key = "s", mods = "CTRL" }
 
 config.keys = {
-    { key = "n", mods = "LEADER", action = act.SpawnTab("DefaultDomain") },
+    { key = "c", mods = "LEADER", action = act.SpawnTab("DefaultDomain") },
     { key = "q", mods = "LEADER", action = act.CloseCurrentPane({ confirm = false }) },
     { key = "h", mods = "LEADER", action = act.SplitPane({ direction = "Left" }) },
     { key = "j", mods = "LEADER", action = act.SplitPane({ direction = "Down" }) },
@@ -144,9 +140,14 @@ tabline.setup({
         icons_enabled = true,
         tabs_enabled = true,
         theme_overrides = {
+            normal_mode = {
+                a = { fg = '#181825', bg = '#a6da95' },
+                b = { fg = '#89b4fa', bg = '#1e1e2e' },
+                c = { fg = '#cdd6f4', bg = '#1e1e2e' },
+            },
             tab = {
-                active = { fg = "#cdd6f4", bg = "#181825" },
-                inactive = { fg = "#cdd6f4", bg = "#181825" },
+                active = { fg = "#cdd6f4", bg = "#313244" },
+                inactive = { fg = "#cdd6f4", bg = "#1e1e2e" },
                 inactive_hover = { fg = "#f5c2e7", bg = "#313244" },
             },
         },

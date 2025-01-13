@@ -11,37 +11,18 @@
 
   imports = [
     ./gnome.nix
-    ./starship.nix
+    ./bash.nix
+    ./wezterm.nix
+    ./neovim.nix
   ];
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    fzf
-    wezterm
-    cascadia-code
-    zoxide
-    neovim
     gh
     gcc
     lazygit
-    ripgrep
     whatsapp-for-linux
-    lua-language-server
-    pyright
-    tinymist
-    nil
-    stylua
-    black
-    typst
-    typstfmt
-    alejandra
-    eza
-    python3
-    julia
-    gleam
-    bat
     chafa
-    fastfetch
     zathura
     inputs.zen-browser.packages."${pkgs.system}".specific
   ];

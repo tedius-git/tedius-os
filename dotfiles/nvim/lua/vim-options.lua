@@ -21,4 +21,3 @@ return function()
     vim.opt.timeoutlen = 500
     vim.opt.splitbelow = true
 end
-

@@ -7,7 +7,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.typstfmt ,
-				null_ls.builtins.formatting.biome,
+				null_ls.builtins.formatting.alejandra ,
 			},
 		})
 
