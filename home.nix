@@ -14,7 +14,6 @@
     ./bash.nix
     ./wezterm.nix
     ./neovim.nix
-    ./xremap.nix
   ];
 
   # Packages that should be installed to the user profile.
