@@ -10,6 +10,6 @@
   ];
 
   home.file = {
-    ".wezterm.lua".source = ./dotfiles/wezterm/.wezterm.lua;
+    ".wezterm.lua".source = ./../dotfiles/wezterm/.wezterm.lua;
   };
 }

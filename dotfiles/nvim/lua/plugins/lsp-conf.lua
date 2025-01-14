@@ -19,6 +19,7 @@ return {
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
 			lspconfig.nil_ls.setup({ capabilities = capabilities })
+			lspconfig.julials.setup({ capabilities = capabilities })
 			lspconfig.tinymist.setup({
 				capabilities = capabilities,
 				on_attach = function(client, bufnr)

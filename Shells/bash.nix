@@ -5,7 +5,7 @@
   ...
 }: {
   imports = [
-    ./starship.nix
+    ./../TerminalApps/starship.nix
   ];
 
   home.packages = with pkgs; [
@@ -17,7 +17,7 @@
   ];
 
   home.file = {
-    ".bashrc".source = ./dotfiles/bash/.bashrc;
-    ".bash_profile".source = ./dotfiles/bash/.bash_profile;
+    ".bashrc".source = ./../dotfiles/bash/.bashrc;
+    ".bash_profile".source = ./../dotfiles/bash/.bash_profile;
   };
 }

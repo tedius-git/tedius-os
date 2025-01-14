@@ -39,7 +39,7 @@
 
   home.file = {
     "nvim" = {
-        source = ./dotfiles/nvim;
+        source = ./../dotfiles/nvim;
         target = ".config/nvim";
         recursive = true;
     };
