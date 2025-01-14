@@ -14,6 +14,7 @@
     ./bash.nix
     ./wezterm.nix
     ./neovim.nix
+    ./yazi.nix
   ];
 
   # Packages that should be installed to the user profile.

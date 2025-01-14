@@ -15,6 +15,8 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475a \
 --multi"
 
+EDITOR=nvim
+
 alias ls="eza --all --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias ff="fastfetch"
 
