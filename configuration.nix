@@ -66,6 +66,10 @@
     variant = "";
   };
 
+  hardware.uinput.enable = true;
+  users.groups.uinput.members = ["tedius"];
+  users.groups.input.members = ["tedius"];
+
   # Configure console keymap
   console.keyMap = "la-latin1";
 
