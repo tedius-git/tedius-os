@@ -8,13 +8,12 @@
   home.username = "tedius";
   home.homeDirectory = "/home/tedius";
 
-
   imports = [
-    ./gnome.nix
-    ./bash.nix
-    ./wezterm.nix
-    ./neovim.nix
-    ./yazi.nix
+    ./DE/gnome.nix
+    ./Shells/bash.nix
+    ./DesktopApps/wezterm.nix
+    ./TerminalApps/neovim.nix
+    ./TerminalApps/yazi.nix
   ];
 
   # Packages that should be installed to the user profile.
