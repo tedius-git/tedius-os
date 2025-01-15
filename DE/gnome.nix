@@ -8,6 +8,7 @@
     gnome-extension-manager
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash2dock-lite
-    gnomeExtensions.xremap
+
+    kmonad
   ];
 }

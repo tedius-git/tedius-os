@@ -30,11 +30,11 @@
     nil # nix lsp
     alejandra # nix formatter
 
-    #julia
-    julia
+    #web dev
+    typescript-language-server
+    superhtml
+    tailwindcss-language-server
 
-    # gleam
-    gleam
   ];
 
   home.file = {

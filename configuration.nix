@@ -37,6 +37,10 @@
     efi.canTouchEfiVariables = true;
   };
 
+  hardware.uinput.enable = true;
+  users.groups.uinput.members = ["hp"];
+  users.groups.input.members = ["hp"];
+
   networking.hostName = "hp"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -111,6 +115,10 @@
     FLAKEREF = "/home/tedius/tedius-os";
   };
 
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    julia
+  ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -120,6 +128,8 @@
     wget
     nh
     xclip
+    julia
+    gnomeExtensions.kmonad-toggle
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
