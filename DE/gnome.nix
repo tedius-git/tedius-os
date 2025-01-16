@@ -4,6 +4,16 @@
   inputs,
   ...
 }: {
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      accent-color = "purple";
+    };
+    "org/gnome/desktop/background" = {
+      picture-uri= "file:///home/tedius/tedius-os/Assets/puffy-stars.jpg";
+      picture-uri-dark = "file:///home/tedius/tedius-os/Assets/puffy-stars.jpg";
+    };
+  };
 
   gtk = {
     enable = true;
