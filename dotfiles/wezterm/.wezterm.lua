@@ -30,7 +30,7 @@ end)
 
 -- General Config
 config.color_scheme = "Catppuccin Mocha"
-config.font = wezterm.font("Cascadia Code", { weight = "DemiBold" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
 config.font_size = 16.0
 config.window_background_opacity = OPACITY.solid
 config.initial_cols = 120

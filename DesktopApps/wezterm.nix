@@ -6,7 +6,6 @@
 }: {
   home.packages = with pkgs; [
     wezterm
-    cascadia-code
     jetbrains-mono
   ];
 
