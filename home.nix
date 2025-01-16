@@ -23,6 +23,8 @@
     whatsapp-for-linux
     zathura # Pdf reader
     obsidian # Notes
+    geogebra6 # Matematical graphics
+    obs-studio 
     inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
