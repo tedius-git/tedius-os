@@ -38,8 +38,8 @@
   };
 
   hardware.uinput.enable = true;
-  users.groups.uinput.members = ["hp"];
-  users.groups.input.members = ["hp"];
+  users.groups.uinput.members = ["tedius"];
+  users.groups.input.members = ["tedius"];
 
   networking.hostName = "hp"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
