@@ -18,12 +18,11 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    gh
-    gcc
+    gh # Github cli
     lazygit
     whatsapp-for-linux
-    chafa
-    zathura
+    zathura # Pdf reader
+    obsidian # Notes
     inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 

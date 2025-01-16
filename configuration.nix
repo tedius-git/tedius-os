@@ -128,8 +128,7 @@
     wget
     nh
     xclip
-    julia
-    gnomeExtensions.kmonad-toggle
+    gcc
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
