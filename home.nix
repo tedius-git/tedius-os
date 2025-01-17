@@ -9,7 +9,8 @@
   home.homeDirectory = "/home/tedius";
 
   imports = [
-    ./DE/gnome.nix
+    ./DE-WM/gnome.nix
+    ./DE-WM/hyprland.nix
     ./Shells/bash.nix
     ./DesktopApps/wezterm.nix
     ./TerminalApps/neovim.nix
