@@ -10,7 +10,6 @@
 
   imports = [
     ./DE-WM/gnome.nix
-    ./DE-WM/hyprland.nix
     ./Shells/bash.nix
     ./DesktopApps/wezterm.nix
     ./TerminalApps/neovim.nix
