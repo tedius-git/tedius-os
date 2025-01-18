@@ -25,6 +25,7 @@
     obsidian # Notes
     geogebra6 # Matematical graphics
     obs-studio 
+    ghostty
     inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
