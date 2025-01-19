@@ -40,6 +40,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash2dock-lite
     gnomeExtensions.panel-workspace-scroll
+    gnomeExtensions.open-bar
     gnome-tweaks
   ];
 }

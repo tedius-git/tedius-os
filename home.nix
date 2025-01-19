@@ -26,6 +26,7 @@
     geogebra6 # Matematical graphics
     obs-studio 
     ghostty
+    inkscape
     inputs.zen-browser.packages."${pkgs.system}".specific
   ];
 
