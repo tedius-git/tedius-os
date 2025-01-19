@@ -27,7 +27,7 @@
     obs-studio 
     ghostty
     inkscape
-    inputs.zen-browser.packages."${pkgs.system}".specific
+    inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
   # You can update home Manager without changing this value. See
