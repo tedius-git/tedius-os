@@ -24,9 +24,10 @@
     zathura # Pdf reader
     obsidian # Notes
     geogebra6 # Matematical graphics
-    obs-studio 
+    obs-studio
     ghostty
     inkscape
+    dolphin-emu
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
