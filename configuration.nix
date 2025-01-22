@@ -108,6 +108,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Bluetooth
+  services.blueman.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

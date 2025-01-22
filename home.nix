@@ -27,7 +27,7 @@
     obs-studio
     ghostty
     inkscape
-    dolphin-emu
+    chromium
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
