@@ -17,7 +17,6 @@
     stylua # lua formatter
 
     #python
-    python3
     pyright # python lsp
     black # python formatter
 

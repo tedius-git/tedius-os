@@ -28,6 +28,7 @@
     ghostty
     inkscape
     chromium
+    discord-canary
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
