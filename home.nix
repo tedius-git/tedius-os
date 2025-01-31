@@ -12,6 +12,7 @@
     ./DE-WM/gnome.nix
     ./Shells/bash.nix
     ./DesktopApps/wezterm.nix
+    ./DesktopApps/zathura.nix
     ./TerminalApps/neovim.nix
     ./TerminalApps/yazi.nix
   ];
@@ -21,7 +22,6 @@
     gh # Github cli
     lazygit
     whatsapp-for-linux
-    zathura # Pdf reader
     obsidian # Notes
     geogebra6 # Matematical graphics
     obs-studio
