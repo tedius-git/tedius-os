@@ -12,7 +12,7 @@
     ./DE-WM/gnome.nix
     ./Shells/bash.nix
     ./DesktopApps/wezterm.nix
-    ./DesktopApps/zathura.nix
+    ./DesktopApps/zathura.nix # Pdf reader
     ./TerminalApps/neovim.nix
     ./TerminalApps/yazi.nix
   ];
