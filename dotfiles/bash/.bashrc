@@ -7,7 +7,10 @@ HISTFILESIZE=2000
 eval "$(fzf --bash)"
 eval "$(zoxide init --cmd cd bash)"
 eval "$(starship init bash)"
-#bleopt prompt_ps1_transient=trim
+
+source "$(blesh-share)"/ble.sh --attach=none # does not work currently
+
+bleopt prompt_ps1_transient=trim
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:-1,spinner:#f5e0dc,hl:#f38ba8 \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
@@ -45,3 +48,5 @@ run-typ() {
   # Esperar a que termine el proceso watch
   wait $PID
 }
+
+[[ ! ${BLE_VERSION-} ]] || ble-attach

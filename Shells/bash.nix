@@ -14,6 +14,7 @@
     eza
     fastfetch
     bat
+    blesh
   ];
 
   home.file = {
