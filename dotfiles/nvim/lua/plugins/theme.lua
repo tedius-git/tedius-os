@@ -163,7 +163,7 @@ return {
 							separator = { left = "", right = "" },
 							left_padding = 2,
 							right_padding = 2,
-							color = { bg = catppuccin.red, fg = catppuccin.surface0 },
+							color = { bg = catppuccin.surface0 , fg = catppuccin.red},
 						},
 					},
 					lualine_y = {},

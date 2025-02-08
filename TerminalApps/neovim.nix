@@ -33,14 +33,13 @@
     typescript-language-server
     superhtml
     tailwindcss-language-server
-
   ];
 
   home.file = {
     "nvim" = {
-        source = ./../dotfiles/nvim;
-        target = ".config/nvim";
-        recursive = true;
+      source = ./../dotfiles/nvim;
+      target = ".config/nvim";
+      recursive = true;
     };
   };
 }
