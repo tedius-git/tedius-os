@@ -15,6 +15,7 @@
     fastfetch
     bat
     blesh
+    cmatrix
   ];
 
   home.file = {
