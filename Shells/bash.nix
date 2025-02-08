@@ -21,5 +21,6 @@
   home.file = {
     ".bashrc".source = ./../dotfiles/bash/.bashrc;
     ".bash_profile".source = ./../dotfiles/bash/.bash_profile;
+    ".blerc".source = ./../dotfiles/bash/.blerc;
   };
 }

@@ -29,6 +29,7 @@
     inkscape
     chromium
     discord-canary
+    dwarf-fortress # Game
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
