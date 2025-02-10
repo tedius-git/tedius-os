@@ -32,7 +32,7 @@
     dwarf-fortress
     dwarf-fortress-packages.dwarf-fortress-original
     dwarf-fortress-packages.dwarf-therapist
-    # dwarf-fortress-packages.themes.vettlingr
+    libreoffice-still
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
