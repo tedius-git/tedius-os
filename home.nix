@@ -29,7 +29,10 @@
     inkscape
     chromium
     discord-canary
-    dwarf-fortress-packages.dwarf-fortress-full # Game
+    dwarf-fortress
+    dwarf-fortress-packages.dwarf-fortress-original
+    dwarf-fortress-packages.dwarf-therapist
+    # dwarf-fortress-packages.themes.vettlingr
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 
