@@ -33,6 +33,7 @@
     dwarf-fortress-packages.dwarf-fortress-original
     dwarf-fortress-packages.dwarf-therapist
     libreoffice-still
+    unzip
     inputs.zen-browser.packages."${pkgs.system}".default
   ];
 

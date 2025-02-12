@@ -12,6 +12,7 @@ local smart_splits = wezterm.plugin.require("https://github.com/mrjones2014/smar
 local resurrect = wezterm.plugin.require("https://github.com/MLFlexer/resurrect.wezterm")
 local workspace_switcher = wezterm.plugin.require("https://github.com/MLFlexer/smart_workspace_switcher.wezterm")
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
+local presentation = wezterm.plugin.require("https://gitlab.com/xarvex/presentation.wez")
 
 config.default_workspace = "~"
 
@@ -208,5 +209,11 @@ wezterm.on("smart_workspace_switcher.workspace_switcher.selected", function(wind
 	local workspace_state = resurrect.workspace_state
 	resurrect.save_state(workspace_state.get_workspace_state())
 end)
+
+presentation.apply_to_config(config, {
+    presentation_full = {
+        keybind = { key = "p", mods = "LEADER" }
+    },
+})
 
 return config
