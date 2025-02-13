@@ -23,6 +23,10 @@ EDITOR=nvim
 alias ls="eza --all --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias ff="fastfetch"
 
+# alias to nix shell/flakes
+alias pyshell="nix-shell ~/tedius-os/Shells/python/"
+alias pyflake="nix develop ~/tedius-os/Shells/python/"
+
 run-typ() {
   # Verificar que se haya proporcionado un argumento
   if [ "$#" -ne 1 ]; then
