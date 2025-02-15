@@ -11,6 +11,7 @@ $c\
 $rust\
 $golang\
 $nodejs\
+$deno\
 $php\
 $java\
 $kotlin\
@@ -109,6 +110,11 @@ style = "bg:teal"
 format = '[[($all_status$ahead_behind )](fg:base bg:purple)]($style)'
 
 [nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[deno]
 symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'

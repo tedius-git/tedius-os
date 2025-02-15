@@ -26,6 +26,8 @@ alias ff="fastfetch"
 # alias to nix shell/flakes
 alias pyshell="nix-shell ~/tedius-os/Shells/python/"
 alias pyflake="nix develop ~/tedius-os/Shells/python/"
+alias jsshell="nix-shell ~/tedius-os/Shells/js-ts/"
+alias jsflake="nix develop ~/tedius-os/Shells/js-ts/"
 
 run-typ() {
   # Verificar que se haya proporcionado un argumento

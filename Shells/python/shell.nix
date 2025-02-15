@@ -10,11 +10,9 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
-    echo -e "\033[1;34m========================================\033[0m"
-    echo -e "\033[1;32mPython Version:\033[0m \033[1;33m$(python --version)\033[0m"
-    echo -e "\033[1;34m========================================\033[0m"
-    echo -e "\033[1;32mInstalled Packages:\033[0m"
+    echo -e "Python Version:$(python --version)"
+    echo -e "Installed Packages:"
     pip list --format=columns | grep -Ev "pip|setuptools|wheel|pkg-resources|contourpy|cycler|fonttools|kiwisolver|packaging|pillow|pyparsing|python-dateutil|six"
-    echo -e "\033[1;34m========================================\033[0m"
+
   '';
 }

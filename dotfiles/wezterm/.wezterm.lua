@@ -211,9 +211,9 @@ wezterm.on("smart_workspace_switcher.workspace_switcher.selected", function(wind
 end)
 
 presentation.apply_to_config(config, {
-    presentation_full = {
-        keybind = { key = "p", mods = "LEADER" }
-    },
+	presentation_full = {
+		keybind = { key = "p", mods = "LEADER" },
+	},
 })
 
 return config
