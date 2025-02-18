@@ -10,7 +10,6 @@ $directory\
 $c\
 $rust\
 $golang\
-$nodejs\
 $deno\
 $php\
 $java\
@@ -109,15 +108,13 @@ format = '[[ $symbol $branch ](fg:base bg:purple)]($style)'
 style = "bg:teal"
 format = '[[($all_status$ahead_behind )](fg:base bg:purple)]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
-
 [deno]
-symbol = ""
+symbol = " "
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+detect_files = ["mod.ts", "deps.ts", "deno.json", "deno.jsonc"]
+detect_folders = [".deno"]
+detect_extensions = ["js", "ts"]
 
 [c]
 symbol = " "

@@ -5,6 +5,7 @@ pkgs.mkShell {
       with p; [
         pip # only for seeing installed packages, not for installing
         numpy
+        sympy
         matplotlib
       ]))
   ];
