@@ -33,6 +33,8 @@
     typescript-language-server
     superhtml
     tailwindcss-language-server
+
+    # haskell
   ];
 
   home.file = {
