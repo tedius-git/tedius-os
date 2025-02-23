@@ -16,6 +16,7 @@
     bat
     blesh
     cmatrix
+    chafa
   ];
 
   home.file = {
