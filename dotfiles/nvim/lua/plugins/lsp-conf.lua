@@ -22,16 +22,6 @@ return {
             lspconfig.ts_ls.setup({ capabilities = capabilities })
             lspconfig.hls.setup({
                 capabilities = capabilities,
-                filetypes = { "haskell", "lhaskell", "cabal" },
-                root_dir = function(fname)
-                    return require("lspconfig.util").root_pattern(
-                        "hie.yaml",
-                        "stack.yaml",
-                        "cabal.project",
-                        "package.yaml",
-                        ".git"
-                    )(fname) or vim.fn.fnamemodify(fname, ":h") -- Usa el directorio del archivo si no hay root marker
-                end,
             })
 
             lspconfig.superhtml.setup({ capabilities = capabilities })
