@@ -32,11 +32,23 @@ set("n", "<leader>Y", [["+Y]])
 set({ "n", "v" }, "<leader>d", [["_d]])
 set("n", "<leader>re", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
 })
 
+vim.keymap.set("n", "<leader>ln", function()
+	local number = vim.wo.number
+	local relativenumber = vim.wo.relativenumber
+
+	if number and relativenumber then
+		vim.wo.number = false
+		vim.wo.relativenumber = false
+	else
+		vim.wo.number = true
+		vim.wo.relativenumber = true
+	end
+end, { desc = "Alternar entre number y relativenumber" })
