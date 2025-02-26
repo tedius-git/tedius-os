@@ -20,4 +20,5 @@ return function()
     vim.opt.updatetime = 300
     vim.opt.timeoutlen = 500
     vim.opt.splitbelow = true
+    vim.opt.swapfile = false
 end

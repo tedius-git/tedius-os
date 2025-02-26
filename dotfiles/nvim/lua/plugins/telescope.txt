@@ -49,7 +49,6 @@ return {
 			-- Configuración de keymaps
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader><leader>", builtin.find_files, {})
-			vim.keymap.set("n", "<leader>gr", builtin.live_grep, { desc = "Telescope live grep" })
 			vim.keymap.set("n", "<leader>bf", builtin.current_buffer_fuzzy_find, {})
 			vim.keymap.set("n", "<leader>ob", builtin.buffers, {})
 			vim.keymap.set("n", "<leader>gs", builtin.grep_string, {})

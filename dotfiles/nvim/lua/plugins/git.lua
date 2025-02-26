@@ -34,6 +34,5 @@ return {
         cond = function()
             return vim.fn.isdirectory(".git") == 1
         end,
-        vim.keymap.set("n", "lg", ":LazyGit<CR>", {}),
     },
 }
