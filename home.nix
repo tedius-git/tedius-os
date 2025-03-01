@@ -13,8 +13,6 @@
     ./Shells/bash.nix
     ./DesktopApps/wezterm.nix
     ./DesktopApps/zathura.nix # Pdf reader
-    ./TerminalApps/neovim.nix
-    ./TerminalApps/yazi.nix
   ];
 
   # Packages that should be installed to the user profile.

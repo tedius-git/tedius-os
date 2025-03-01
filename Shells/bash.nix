@@ -6,6 +6,9 @@
 }: {
   imports = [
     ./../TerminalApps/starship.nix
+    ./../TerminalApps/neovim.nix
+    ./../TerminalApps/yazi.nix
+    ./../TerminalApps/bash_fun.nix
   ];
 
   home.packages = with pkgs; [
@@ -15,7 +18,6 @@
     fastfetch
     bat
     blesh
-    cmatrix
     chafa
   ];
 

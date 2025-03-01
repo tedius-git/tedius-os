@@ -21,6 +21,15 @@ export FZF_DEFAULT_OPTS=" \
 EDITOR=nvim
 
 alias ls="eza --all --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
+tree() {
+    local level="$1"
+    if [[ -z "$level" ]]; then
+        level=1  # Nivel predeterminado si no se proporciona uno
+    fi
+    eza -T --icons=always -L="$level"
+}
+
 alias ff="fastfetch"
 
 # alias to nix shell/flakes

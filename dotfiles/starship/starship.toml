@@ -3,10 +3,9 @@
 format = """
 [](surface0)\
 $os\
-$username\
-[](bg:peach fg:surface0)\
+[](fg:surface0 bg:peach)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:peach bg:green)\
 $c\
 $rust\
 $golang\
@@ -16,9 +15,9 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:teal bg:blue)\
+[](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
+[](fg:blue bg:purple)\
 $git_branch\
 $git_status\
 [ ](fg:purple)\
