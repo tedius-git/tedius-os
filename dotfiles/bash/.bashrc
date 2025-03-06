@@ -39,6 +39,8 @@ alias jsshell="nix-shell ~/tedius-os/Shells/js-ts/"
 alias jsflake="nix develop ~/tedius-os/Shells/js-ts/"
 alias hsshell="nix-shell ~/tedius-os/Shells/haskell/"
 alias hsflake="nix develop ~/tedius-os/Shells/haskell/"
+alias glshell="nix-shell ~/tedius-os/Shells/gleam/"
+alias glflake="nix develop ~/tedius-os/Shells/gleam/"
 
 run-typ() {
   # Verificar que se haya proporcionado un argumento

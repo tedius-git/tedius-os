@@ -15,7 +15,7 @@ in
         IMAGE_PATH=~/tedius-os/Assets/Haskell.png
 
         # Print the Haskell logo on the left
-        chafa "$IMAGE_PATH" -c 8 --dither bayer
+        chafa "$IMAGE_PATH"
         sleep 0.5  # Give time for image to render
 
         # Define the column position for text (adjust as needed)

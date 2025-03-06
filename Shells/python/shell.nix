@@ -17,7 +17,7 @@ pkgs.mkShell {
     IMAGE_PATH=~/tedius-os/Assets/python.png
 
     # Print the Python logo on the left
-    chafa "$IMAGE_PATH" -c 16 --dither fs --dither-grain 8
+    chafa "$IMAGE_PATH"
     sleep 0.5  # Give time for image to render
 
     # Define the column position for text (adjust as needed)

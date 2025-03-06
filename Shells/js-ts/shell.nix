@@ -11,7 +11,7 @@ pkgs.mkShell {
     IMAGE_PATH=~/tedius-os/Assets/deno.png
 
     # Print the Deno logo on the left
-    chafa "$IMAGE_PATH" -c 16 --dither bayer --dither-grain 4 --dither-intensity 3.0
+    chafa "$IMAGE_PATH"
     sleep 0.5  # Give time for image to render
 
     # Define the column position for text (adjust as needed)
