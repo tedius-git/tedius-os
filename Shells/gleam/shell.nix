@@ -4,7 +4,9 @@ in
   pkgs.mkShell {
     packages = with pkgs; [
       gleam
-      erlang
+      erlang_27
+      rebar3
+      inotify-tools
     ];
     shellHook = ''
       clear  # Clear the terminal before displaying anything
@@ -26,7 +28,7 @@ in
       # Move cursor to display Installed Packages title
       tput cup 4 $TEXT_COL
 
-      ROW=5 
+      ROW=5
       ROW=$((ROW + 5))  # Adjust if more space is needed
       tput cup $ROW 0
     '';

@@ -11,7 +11,7 @@
     };
     "org/gnome/desktop/background" = {
       picture-uri = "file:///home/tedius/tedius-os/Assets/beach.jpg";
-      picture-uri-dark = "file:///home/tedius/tedius-os/Assets/puffy-stars.jpg";
+      picture-uri-dark = "file:///home/tedius/tedius-os/Assets/marine-tunnel.jpg";
     };
   };
 

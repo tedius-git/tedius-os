@@ -6,6 +6,7 @@ in
       hs.ghc
       hs.haskell-language-server
       hs.cabal-install
+      hs.linear
     ];
 
     shellHook = ''
