@@ -8,6 +8,8 @@
     # To install Neovim The great
     neovim
 
+    neovide # Just a test
+
     ripgrep # needed for telescope
 
     # Languajes and its lsp/formatters

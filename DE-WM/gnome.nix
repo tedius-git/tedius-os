@@ -13,6 +13,12 @@
       picture-uri = "file:///home/tedius/tedius-os/Assets/beach.jpg";
       picture-uri-dark = "file:///home/tedius/tedius-os/Assets/marine-tunnel.jpg";
     };
+    "org/gnome/desktop/wm/preferences" = {
+      focus-mode = "sloppy";
+    };
+    "org/gnome/shell/extensions/pop-shell" = {
+      hint-color-rgba = "rgba(126, 99, 158, 1)";
+    };
   };
 
   gtk = {
@@ -40,6 +46,7 @@
     gnomeExtensions.dash2dock-lite
     gnomeExtensions.panel-workspace-scroll
     gnomeExtensions.open-bar
+    gnomeExtensions.pop-shell
     gnome-tweaks
   ];
 }

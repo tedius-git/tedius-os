@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     nixos-grub-themes.url = "github:jeslie0/nixos-grub-themes";
     home-manager = {
@@ -15,7 +15,7 @@
   outputs = {
     self,
     nixpkgs,
-    nixpkgs-unstable,
+    #nixpkgs-unstable,
     home-manager,
     ...
   } @ inputs: let

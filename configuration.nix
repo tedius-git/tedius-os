@@ -8,8 +8,9 @@
   ...
 }: {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ./DesktopApps/steam.nix # Game launcher
+    ./DesktopApps/minecraft.nix
   ];
 
   # Bootloader.
@@ -132,7 +133,12 @@
     nh
     xclip
     gcc
+    mangohud
   ];
+
+  hardware.graphics = {
+    enable = true;
+  };
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 

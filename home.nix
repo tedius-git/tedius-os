@@ -9,10 +9,11 @@
   home.homeDirectory = "/home/tedius";
 
   imports = [
-    ./DE-WM/gnome.nix
-    ./Shells/bash.nix
-    ./DesktopApps/wezterm.nix
+    ./DE-WM/gnome.nix # Desktop Enviroment
+    ./Shells/bash.nix # Shell
+    ./DesktopApps/wezterm.nix # Terminal
     ./DesktopApps/zathura.nix # Pdf reader
+    ./DesktopApps/protonGE.nix # Steam optimization
   ];
 
   # Packages that should be installed to the user profile.
@@ -33,6 +34,7 @@
     libreoffice-still
     unzip
     inputs.zen-browser.packages."${pkgs.system}".default
+    lutris # Game launcher
   ];
 
   # You can update home Manager without changing this value. See
