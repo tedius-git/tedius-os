@@ -10,7 +10,6 @@
   imports = [
     ./hardware-configuration.nix
     ./DesktopApps/steam.nix # Game launcher
-    ./DesktopApps/minecraft.nix
   ];
 
   # Bootloader.
@@ -33,7 +32,7 @@
             halt
         }
       '';
-      theme = inputs.nixos-grub-themes.packages.${pkgs.system}.nixos;
+      # theme = inputs.nixos-grub-themes.packages.${pkgs.system}.nixos;
     };
     efi.canTouchEfiVariables = true;
   };
@@ -64,6 +63,11 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  #Stylix configurations
+  stylix.enable = true;
+  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+  stylix.image = ./Assets/marine-tunnel.jpg;
 
   # Configure keymap in X11
   services.xserver.xkb = {

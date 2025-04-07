@@ -5,14 +5,14 @@
   ...
 }: {
   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-      accent-color = "purple";
-    };
-    "org/gnome/desktop/background" = {
-      picture-uri = "file:///home/tedius/tedius-os/Assets/beach.jpg";
-      picture-uri-dark = "file:///home/tedius/tedius-os/Assets/marine-tunnel.jpg";
-    };
+    # "org/gnome/desktop/interface" = {
+    # color-scheme = "prefer-dark";
+    # accent-color = "purple";
+    # };
+    # "org/gnome/desktop/background" = {
+    # picture-uri = "file:///home/tedius/tedius-os/Assets/beach.jpg";
+    # picture-uri-dark = "file:///home/tedius/tedius-os/Assets/marine-tunnel.jpg";
+    # };
     "org/gnome/desktop/wm/preferences" = {
       focus-mode = "sloppy";
     };
@@ -23,11 +23,6 @@
 
   gtk = {
     enable = true;
-
-    theme = {
-      name = "rose-pine";
-      package = pkgs.rose-pine-gtk-theme;
-    };
 
     iconTheme = {
       name = "MoreWaita";

@@ -1,5 +1,6 @@
 {pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    minecraft
+  home.packages = with pkgs; [
+    # minecraft is marked as broken
+    prismlauncher
   ];
 }

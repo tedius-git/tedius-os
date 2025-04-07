@@ -14,6 +14,7 @@
     ./DesktopApps/wezterm.nix # Terminal
     ./DesktopApps/zathura.nix # Pdf reader
     ./DesktopApps/protonGE.nix # Steam optimization
+    ./DesktopApps/minecraft.nix
   ];
 
   # Packages that should be installed to the user profile.
