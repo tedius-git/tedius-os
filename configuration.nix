@@ -1,12 +1,7 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
     ./DesktopApps/steam.nix # Game launcher
@@ -66,6 +61,7 @@
 
   #Stylix configurations
   stylix.enable = true;
+  stylix.polarity = "dark";
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
   stylix.image = ./Assets/pixel-castle.png;
   stylix.cursor.package = pkgs.bibata-cursors;
@@ -108,9 +104,6 @@
     isNormalUser = true;
     description = "Tedius";
     extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
   };
 
   # Install firefox.
