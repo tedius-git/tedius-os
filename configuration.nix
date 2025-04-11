@@ -67,7 +67,10 @@
   #Stylix configurations
   stylix.enable = true;
   stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-  stylix.image = ./Assets/marine-tunnel.jpg;
+  stylix.image = ./Assets/pixel-castle.png;
+  stylix.cursor.package = pkgs.bibata-cursors;
+  stylix.cursor.name = "Bibata-Modern-Ice";
+  stylix.cursor.size = 30;
 
   # Configure keymap in X11
   services.xserver.xkb = {

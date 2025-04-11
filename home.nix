@@ -25,7 +25,7 @@
     obsidian # Notes
     geogebra6 # Matematical graphics
     obs-studio
-    ghostty
+    kitty
     inkscape
     chromium
     discord-canary

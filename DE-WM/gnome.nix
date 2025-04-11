@@ -5,19 +5,11 @@
   ...
 }: {
   dconf.settings = {
-    # "org/gnome/desktop/interface" = {
-    # color-scheme = "prefer-dark";
-    # accent-color = "purple";
-    # };
-    # "org/gnome/desktop/background" = {
-    # picture-uri = "file:///home/tedius/tedius-os/Assets/beach.jpg";
-    # picture-uri-dark = "file:///home/tedius/tedius-os/Assets/marine-tunnel.jpg";
-    # };
     "org/gnome/desktop/wm/preferences" = {
       focus-mode = "sloppy";
     };
     "org/gnome/shell/extensions/pop-shell" = {
-      hint-color-rgba = "rgba(126, 99, 158, 1)";
+      hint-color-rgba = "rgba(203, 166, 247,1)";
     };
   };
 
@@ -28,11 +20,6 @@
       name = "MoreWaita";
       package = pkgs.morewaita-icon-theme;
     };
-
-    cursorTheme = {
-      name = "Bibata-Modern-Ice";
-      package = pkgs.mint-cursor-themes;
-    };
   };
 
   home.packages = with pkgs; [
@@ -42,6 +29,7 @@
     gnomeExtensions.panel-workspace-scroll
     gnomeExtensions.open-bar
     gnomeExtensions.pop-shell
+    gnomeExtensions.just-perfection
     gnome-tweaks
   ];
 }
